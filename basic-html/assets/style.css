@@ -4,9 +4,12 @@
 
 .neo-top-links {
     float: right;
+    padding-top: 12px;
+    padding-right: 15px;
 }
 
 .top-links {
+    float: left;
     border: none;
     background: white;
     padding: 10px;
