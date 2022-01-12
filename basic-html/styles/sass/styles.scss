@@ -1,0 +1,451 @@
+@import "setup";
+@import "vars";
+@import "typography";
+
+// ===========================================
+// General
+// ===========================================
+html {
+  scroll-behavior: smooth;
+}
+
+// ===========================================
+// Header
+// ===========================================
+header {
+  background: url(./../assets/home-image_one.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mainNavContainer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: $white;
+  justify-content: space-between;
+  border-bottom: 0.2px solid $black;
+  z-index: 10;
+}
+
+.mainNavbarLinks {
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+
+  img {
+    padding-top: 0.1rem;
+    width: 15px;
+  }
+
+  li {
+    list-style: none;
+    padding: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+  }
+
+  li:hover .subMenu,
+  li:focus-within .subMenu {
+    height: auto;
+  }
+}
+
+.subMenu {
+  background-color: $white;
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  padding-left: 0.2rem;
+  min-width: 10%;
+  border-radius: 2px;
+  white-space: nowrap;
+  top: 3.5rem;
+
+  li {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.burgerMenu {
+  display: none;
+}
+
+// ===========================================
+// .welcome
+// ===========================================
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 900px;
+
+  h1 {
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    width: 65%;
+    margin-bottom: 3%;
+  }
+
+  button {
+    padding: 0.8rem 2rem;
+    background: $white;
+    color: $blue;
+    border: 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: $blue;
+      color: $white;
+    }
+
+    i {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// ===========================================
+// .moreInformation
+// ===========================================
+.moreInformation {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.moreInfoContent {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  background: $white;
+  box-shadow: 0px 6px 15px -4px rgba(0, 0, 0, 0.75);
+  position: relative;
+  bottom: 10rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  h4 {
+    margin-bottom: 0;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+  }
+}
+
+.item {
+  flex-basis: 25%;
+  flex-grow: 0;
+  margin: 2rem;
+}
+
+.iconContainer {
+  width: 100%;
+  background: #f8f8f8;
+  text-align: center;
+  border: 1px solid #b3b3b3;
+  padding: 2.5rem 0;
+}
+
+// ===========================================
+// .whatsNew
+// ===========================================
+.whatsNew {
+  display: flex;
+  align-items: center;
+  max-width: 1650px;
+  margin: 0 auto 5% auto;
+}
+
+.whatsNewInfo {
+  flex-basis: 45%;
+  margin-left: 3rem;
+
+  button {
+    padding: 0.8rem 2rem;
+    color: $white;
+    background: $blue;
+    border: 0;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    margin: 3rem 0 0 2.2rem;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: $red;
+    }
+  }
+}
+
+.whatsNewImg {
+  flex-basis: 55%;
+  margin-left: 5%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.headerAndText {
+  border-left: 5px solid $red;
+  padding-left: 2rem;
+}
+
+// ===========================================
+// .inclusiveDesign
+// ===========================================
+.inclusiveDesign {
+  background: #0a8e9b;
+}
+
+.inclusiveDesignContent {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.inclusiveDesignImg {
+  flex-basis: 65%;
+  margin-right: 10%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.inclusiveDesignText {
+  flex-basis: 45%;
+}
+
+.incdHeaderAndText {
+  color: $white;
+  border-left: 5px solid $white;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.incdBtns {
+  display: flex;
+  margin-left: 2.5rem;
+  white-space: nowrap;
+
+  button {
+    padding: 0.8rem 1.5rem;
+    background: $white;
+    color: $blue;
+    border: 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 0.5rem;
+
+    &:hover,
+    &:focus {
+      background: $blue;
+      color: $white;
+    }
+  }
+}
+
+// ===========================================
+// Footer
+// ===========================================
+footer {
+  padding: 1rem 0;
+
+  p {
+    margin: 0 3rem 0 0;
+  }
+}
+
+.footerNavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+
+  img {
+    margin: 0.5rem 0 0 3rem;
+  }
+}
+
+.footerNavbarLinks {
+  display: flex;
+
+  li {
+    list-style: none;
+    padding: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+  }
+}
+
+// ===========================================
+// MEDIA QUERIES
+// ===========================================
+/* Desktops,large screens */
+@media (max-width: 1100px) {
+  //Footer
+  .footerNavContainer img,
+  footer p {
+    margin: 0 3rem 0 3rem;
+  }
+  .footerNavbarLinks {
+    flex-direction: column;
+
+    li {
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  //Header
+  .mainNavbarLinks {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: initial;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+
+  //.moreInformation
+  .moreInfoContent {
+    flex-direction: column;
+  }
+
+  .iconContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .item {
+    text-align: center;
+  }
+
+  //.inclusiveDesign
+  .inclusiveDesignContent {
+    flex-direction: column;
+  }
+
+  .inclusiveDesignImg {
+    margin: 0;
+  }
+
+  .incdHeaderAndText {
+    padding-left: 2rem;
+  }
+
+  .incdBtns {
+    margin: 0 0 0 2rem;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  //.whatsNew
+  .whatsNew {
+    flex-direction: column-reverse;
+  }
+
+  .whatsNewInfo {
+    margin: 0 1rem;
+    text-align: right;
+
+    button {
+      margin: 2rem;
+    }
+  }
+
+  .headerAndText {
+    padding: 0 2rem 0 0;
+    border-left: none;
+    border-right: 5px solid $red;
+  }
+
+  .whatsNewImg {
+    margin: 0 3rem 0 0;
+  }
+
+  //.inclusiveDesign
+  .incdBtns {
+    flex-direction: column;
+
+    button {
+      margin: 1rem 0;
+      width: 18rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 544px) {
+  //Header
+  .mainNavContainer img {
+    width: 70%;
+  }
+
+  //Footer
+  .footerNavContainer {
+    flex-direction: column;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .footerNavbarLinks {
+    padding: 0;
+    margin: 2rem 0;
+  }
+}

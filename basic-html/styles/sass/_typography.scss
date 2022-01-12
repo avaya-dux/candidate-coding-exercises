@@ -1,0 +1,41 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p {
+  line-height: 1.45;
+}
+
+button {
+  font-size: 18px;
+}
+
+.mainNavContainer {
+  line-height: 0.8;
+}
+
+.welcome {
+  color: $white;
+
+  span {
+    font-weight: lighter;
+  }
+}
+
+.moreInfoContent {
+  h4 {
+    font-weight: lighter;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+}
+
+footer {
+  font-size: 16px;
+
+  p {
+    font-style: italic;
+  }
+}
