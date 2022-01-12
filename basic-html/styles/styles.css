@@ -327,8 +327,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   border-bottom: 0.2px solid #000;
   z-index: 10;
 }
@@ -422,9 +420,9 @@ header {
   color: #1473e6;
   border: 0;
   border-radius: 2px;
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .welcome button:hover, .welcome button:focus {
@@ -509,8 +507,8 @@ header {
 
 .whatsNewInfo button {
   padding: 0.8rem 2rem;
-  background: #1473e6;
   color: #fff;
+  background: #1473e6;
   border: 0;
   border-radius: 2px;
   -webkit-transition: background 0.3s ease;
@@ -751,6 +749,9 @@ footer p {
 @media (max-width: 544px) {
   .mainNavContainer img {
     width: 70%;
+  }
+  .iconContainer {
+    width: 100%;
   }
   .footerNavContainer {
     -webkit-box-orient: vertical;
