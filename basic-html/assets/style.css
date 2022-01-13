@@ -5,7 +5,7 @@
 .neo-top-links {
     float: right;
     padding-top: 12px;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .top-links {
@@ -17,7 +17,7 @@
 
 .home-image {
     width: 100%;
-    z-index: 0;
+    min-width: 0rem
 }
 
 .introduction-text {
@@ -33,7 +33,7 @@
     color: dodgerblue;
     background-color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     display: inline-block;
     height: 30px;
 }
@@ -41,24 +41,132 @@
 .design-components-container {
     display: flex;
     box-shadow: 0px 0px 8px;
-    height: 250px;
+    height: 300px;
     width: 80%;
     margin: 0 auto;
     transform: translate(0%, -45%);
     background-color: white;
     justify-content: space-between;
+    position: relative;
 }
 
 .design-components {
     display: flex;
     justify-content: center;
-    height: 50%;
+    height: 35%;
     width: 30%;
     background-color: gainsboro;
     margin: 20px;
     border: 1px solid;
+    border-color: darkgray;
 }
 
 .design-components-images {
-    max-width: 18%;
+    height: 50px;
+    margin: auto;
+}
+
+.design-foundations-text {
+    display: inline-block;
+    position: absolute;
+    transform: translate(25px, 140px);
+    width: 30%;
+}
+
+.component-libraries-text {
+    position: absolute;
+    width: 30%;
+    top: 47%;
+    left: 36%;
+}
+
+.icon-library-text {
+    position: absolute;
+    width: 30%;
+    top: 47%;
+    left: 69%;
+}
+
+.design-titles{
+    color: dodgerblue;
+}
+
+.brand-new {
+    height: 600px;
+}
+
+.brand-new-image {
+    float: right;
+    margin-right: 50px;
+}
+
+.brand-new-text {
+    float: left;
+    padding-left: 20px;
+    margin-top: 170px;
+    margin-left: 50px;
+    border-left: 3px solid red;
+}
+
+.brand-new-button {
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 2px;
+}
+
+.inclusive-design {
+    height: 600px;
+    background-color: #0B8E9B;
+}
+
+.inclusive-image {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.inclusive-design-text {
+    float: right;
+    color: white;
+    padding-left: 20px;
+    margin-right: 150px;
+    margin-top: 170px;
+    border-left: 3px solid white;
+}   
+
+.inclusive-design-button1 {
+    height: 35px;
+    border: none;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.inclusive-design-button2 {
+    height: 35px;
+    border: none;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.footer {
+    height: 50px;
+}
+
+.footer-image {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.neo-bottom-links {
+    position: relative;
+    text-align: center;
+    bottom: 50%;
+}
+
+.neo-bottom-link {
+    border: none;
+    background: transparent;
 }
