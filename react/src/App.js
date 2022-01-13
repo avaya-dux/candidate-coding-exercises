@@ -1,9 +1,9 @@
 import "./scss/App.scss";
-
+import DiffTypeofButn from "./components/button/DiffTypeofButn";
 function App() {
   return (
     <div className="home__background">
-      <p className="home__text">Please render your Components Here</p>
+      <DiffTypeofButn />
     </div>
   );
 }
