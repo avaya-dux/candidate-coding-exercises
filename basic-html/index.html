@@ -1,13 +1,211 @@
-<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaya Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- HTML/CSS test: 
+    - Please write a web page that mimics the stylings seen in /assets/condensed_home_spec.png 
+    - Please note that it does not have to be a pixel-perfect rendition; please get the styles as close as possible 
+    - Don't worry about the font-family
+    - Unless overwise directed, we will test this by simply opening this page (`index.html`) in a browser and comparing the output to the provided mock image -->
+    <header>
+      <nav class="mainNavContainer">
+        <a href="#">
+          <img src="./assets/header-logo-full.svg" alt="Avaya Header Logo" />
+        </a>
+        <ul class="mainNavbarLinks">
+          <li><a href="#">What's New</a></li>
 
-HTML/CSS test:
+          <li>
+            <a href="#"
+              >Guidelines
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="subMenu">
+              <li>
+                <a href="#">Some <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Guidelines <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Go <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Here <i class="fas fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </li>
 
-Please write a web page that mimics the stylings seen in /assets/condensed_home_spec.png
+          <li>
+            <a href="#">Components <i class="fas fa-chevron-down"></i> </a>
+            <ul class="subMenu">
+              <li>
+                <a href="#">Some <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Components <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Go <i class="fas fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Here <i class="fas fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </li>
 
-Please note that it does not have to be a pixel-perfect rendition; please get the styles as close as possible
+          <li><a href="#">FAQs</a></li>
+        </ul>
 
-Don't worry about the font-family
+        <div class="burgerMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+      <!-- /.navBar -->
 
-Unless overwise directed, we will test this by simply opening this page (`index.html`) in a browser and comparing the output to the provided mock image
+      <div class="welcome">
+        <h1>Introducing Neo <span>Avaya's Design System</span></h1>
+        <p>
+          Neo is a library of flexible design components and guidelines, built
+          upon our core principles and ready to be integrated into your digital
+          products.
+        </p>
 
--->
+        <button class="gettingStartedbtn">
+          Getting Started <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <!-- ./Header -->
+    <main>
+      <section class="moreInformation">
+        <div class="moreInfoContent">
+          <div class="itemOne item">
+            <div class="iconContainer">
+              <img
+                src="./assets/design-foundations.svg"
+                alt="Design Foundations Icon"
+              />
+            </div>
+            <h4><a href="#">Design Foundations</a></h4>
+            <p>
+              A UX Design System that helps developers build consistent and
+              exceptional user experiences.
+            </p>
+          </div>
+
+          <div class="itemTwo item">
+            <div class="iconContainer">
+              <img
+                src="./assets/ui-components.svg"
+                alt="UI Component Libraries Icon"
+              />
+            </div>
+            <h4><a href="#">UI Component Libraries</a></h4>
+            <p>
+              Code components for all of the common elements you use in your
+              apps.
+            </p>
+          </div>
+          <div class="itemThree item">
+            <div class="iconContainer">
+              <img src="./assets/icon-library.svg" alt="Icon Library Icon" />
+            </div>
+            <h4><a href="#">Icon Library</a></h4>
+            <p>An extensive collection of icons for nearly every occasion.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ./moreInformation -->
+
+      <section class="whatsNew">
+        <div class="whatsNewInfo">
+          <div class="headerAndText">
+            <h2>Brand. New.</h2>
+            <p>
+              Centralized guidelines creating a uniform experience, regardless
+              of the application.
+            </p>
+          </div>
+          <button class="componentLib">Component Libraries</button>
+        </div>
+
+        <div class="whatsNewImg">
+          <img
+            src="./assets/brand-new.svg"
+            alt="A black phone with images of people attending a meeting via video conference"
+          />
+        </div>
+      </section>
+      <!-- ./whatsNew -->
+
+      <section class="inclusiveDesign">
+        <div class="inclusiveDesignContent">
+          <div class="inclusiveDesignImg">
+            <img
+              src="./assets/inclusive.svg"
+              alt="An image outlining design inclusivity for those with impairments"
+            />
+          </div>
+
+          <div class="inclusiveDesignText">
+            <div class="incdHeaderAndText">
+              <h2>Inclusive Design.</h2>
+              <p>
+                Building innovative frameworks that reach the widest possible
+                audience, regardless of culture, background or physical ability.
+                We explore possibility to find the source of great experience
+                and success for everyone.
+              </p>
+            </div>
+
+            <div class="incdBtns">
+              <button class="incdBtnOne">Accessibility Guidelines</button>
+              <button class="incdBtnTwo">
+                Internationalization Guidelines
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ./inclusiveDesign -->
+    </main>
+    <footer>
+      <nav class="footerNavContainer">
+        <a href="#">
+          <img src="./assets/avaya-logo-footer.svg" alt="Avaya Footer Logo" />
+        </a>
+        <ul class="footerNavbarLinks">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">License</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Trademarks</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+
+        <p><span>&copy;</span> 2021 Avaya, Inc.</p>
+      </nav>
+    </footer>
+    <!-- ./Footer -->
+  </body>
+</html>
